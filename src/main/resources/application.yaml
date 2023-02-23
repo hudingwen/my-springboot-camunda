@@ -1,0 +1,20 @@
+#spring.datasource.url: jdbc:h2:file:./camunda-h2-database
+server:
+  port: 8080
+  servlet:
+    context-path: /
+camunda.bpm.admin-user:
+  id: admin
+  password: admin
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/camunda?serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+camunda:
+  bpm:
+    database:
+      type: mysql
+      schema-update: true
+    auto-deployment-enabled: false # 自动部署 resources 下的 bpmn文件
